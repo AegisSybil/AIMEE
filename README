@@ -1,0 +1,21 @@
+AIMEE
+Advanced Infrastructure Monitoring for Enterprise Environments
+
+
+AIMEE is a monitoring product designed to be easy to configure, deploy and maintain.
+The goal of the project is to produce a monitoring and reporting product that is designed to run non-stop.
+That means we strive for 100% uptime and 0% downtime.  
+For instance if a schedule changes we don't have to reload the whole system, you just push the change and go.
+There are numerous other innovations as well in AIMEE.
+
+AIMEE leverages Boost and OpenMPI to create a series of modules that cooperate together.
+Those modules are Scheduler/Auditor, Executor, Collator.
+
+The Auditor module is the "brains" of the operation, creating the initial schedules and enforcing them.
+The Executor module deals is handed schedules by the Auditor and executes the tasks they contain then passes the results to the Collator.
+The Collator module manages the results, notifies the Auditor of their completion and processes the performance data etc.
+
+The original name for AIMEE was ACE (Audit, Collate, Execute). 
+
+AIMEE is the solution to problems we have seen in the overall design of current mainstream monitoring products.
+For more details, please go to http://www.aegistoday.com/aimee
